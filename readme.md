@@ -8,7 +8,7 @@
 **Login - Codelândia | Desafio 4** 
 O desafio 4 da série de atividades na Comunidade Codelândia, foi criar uma página de login e senha,
 nesse projeto segue as especificações da seguinte UI. 
-Diferencial desse projeto usei a referência de [Geovana borba](https://github.com/geovanaborba)
+Diferencial nesse desafio usei como referência também o projeto da [Geovana borba](https://github.com/geovanaborba)
 a opção da página ficar no padrão em branco ou mudar para escuro nos icones da lua e o sol.<br>
 [Figma]([https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=4261-2&mode=design&t=syoN9o027jK1vj85-0])
 
@@ -17,7 +17,7 @@ Para ver os demais desafios, clique no link a seguir: <br>
 
 
 ### Meus agradecimentos a: 
-[Geovana borba](https://github.com/geovanaborba)
+[Geovana borba](https://github.com/geovanaborba)<br>
 [Iuri Silva](https://www.linkedin.com/in/iuricode/?originalSubdomain=br)
 
 ---------------------------------------------------------------------------------------------------
