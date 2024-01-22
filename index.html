@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Alex Gois" />  
+    <meta name="description" content="Página Codelândia - Desafio 04">
+    <meta name="keywords" content="página, pagina, codelandia, pagina codelandia, desafio 04, desafio, efront, 
+    alex, alex gois, gois" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Login - Codelândia | Desafio 04</title>
+</head>
+
+<body>
+    <container>
+        <div class="col-left" id="col-left">
+            <img src="./assets/img/image.svg" alt="várias fotos de perfis">
+        </div>
+        <div class="col-right" id="col-right">
+            <div class="dark-theme">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+            <form action="">
+                <div class="welcome">
+                    <h4>Bem vindo de volta</h4>
+                    <h2>Faça login na sua conta</h2>
+                </div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@gmail.com" required>
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="*********" required>
+                <div class="remember">
+                    <div class="radio-container">
+                        <label for="radio">
+                            <input type="radio" id="radio" name="radio" />
+                            <div class="custom-radio">
+                                <span></span>
+                            </div>
+                            <span>Lembre de mim</span>
+                        </label>
+                    </div>
+                    <p><a href="">Esqueceu sua senha?</a></p>
+                </div>
+
+                <button type="submit" class="btn-login">Entrar</button>
+                <button class="btn-google"><img src="./assets/img/icon_google.svg" alt="ícone-google">Faça login
+                    com o Google Gmail</button>
+            </form>
+            <p class="final">Não tem uma conta? <a href=""> Cadastre-se</a></p>
+        </div>
+    </container>
+
+    <script src="./assets/js/script.js"></script><!-- SCRIPT WHITE/DARK -->
+    <script src="https://kit.fontawesome.com/5f56dfe06a.js" crossorigin="anonymous"></script><!-- SCRIPT ICONS NO WHITE/DARK -->
+</body>
+
+</html>

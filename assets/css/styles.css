@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+:root {
+    --green: #04c35c;
+    --blue: #2b6cb0;
+      
+    --white: #ffffff;
+    --white300: #f7fafc;
+  
+    --dark: #1a202c;
+    --input: #e8e8e8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+  ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+container {
+    display: flex;
+    height: 100vh;
+}
+
+.col-left {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    width: 50vw;
+}
+
+.col-left img {
+    width: 400px;
+}
+
+.col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white300);
+    width: 50vw;
+    height: 100vh;
+}
+
+/* Dark theme */
+
+.dark-theme {
+    position: absolute;
+    top: 5%;
+    right: 17%;
+}
+
+.dark {
+    background-color: var(--dark);
+    color: var(--input);
+}
+
+.dark .btn-login:hover {
+    border: 2px solid #5ac304;
+    box-shadow: #5ac304 0px 0px 12px 1px inset,
+        #5ac304 0px 0px 12px 1px;
+    background: linear-gradient(0deg, #1a202c 27.26%, #1a202c 96.03%);
+}
+
+.dark .btn-google {
+    background: linear-gradient(90deg, #283749 27.26%, #2b4769 96.03%);
+}
+
+.dark .btn-google:hover {
+    background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
+
+.dark.col-right a:hover {
+    color: var(--input);
+}
+
+.dark.col-left {
+    background-color: #818181;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+/* End dark theme */
+
+.col-right .welcome {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Merriweather', serif;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+.col-right .welcome h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.col-right .welcome h2 {
+    font-size: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(23) alternate,
+        blink 800ms steps(23) normal;
+    border-right: 1px solid #d9d9d9;
+}
+
+@keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: #d9d9d9;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+
+.col-right form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: absolute;
+}
+
+form label {
+    padding: 15px 0 10px 0;
+}
+
+form input {
+    border: 1px solid #E8E8E8;
+    outline: 0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.col-right .remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.col-right .remember {
+    display: flex;
+}
+
+/* ------- INPUT RADIO ------- */
+
+input[type='radio'] {
+    display: none;
+}
+
+.radio-container label {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.custom-radio {
+    border: 1px solid #d9d9d9;
+    width: 15px;
+    height: 15px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.custom-radio:hover {
+    cursor: pointer;
+}
+
+.custom-radio,
+span {
+    transition: 0.5s ease;
+}
+
+.custom-radio span {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #d9d9d9;
+    border-radius: 50%;
+}
+
+input[type='radio']:checked+.custom-radio {
+    border-color: var(--green);
+}
+
+input[type='radio']:checked+.custom-radio span {
+    background: var(--green);
+}
+
+/* ------- END INPUT RADIO ------- */
+
+input::placeholder {
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.col-right form button {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    color: var(--input);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    font-family: 'Lato', sans-serif;
+}
+
+.col-right form .btn-login {
+    background-color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.col-right form .btn-login:hover {
+    border: 2px solid #5ac304;
+    color: #5ac304;
+    background-color: var(---input);
+}
+
+.col-right form .btn-google {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.col-right form .btn-google:hover {
+    background-color: var(--blue);
+}
+
+.col-right a {
+    color: var(--blue);
+}
+
+.col-right a:hover {
+    color: var(--dark);
+}
+
+.col-right .final {
+    position: relative;
+    top: 42%;
+}
+
+/* -------- RESPONSIVO -------- */
+
+@media screen and (max-width:768px) {
+    .col-left {
+        display: none
+    }
+
+    .col-right {
+        width: 100vw;
+    }
+}
